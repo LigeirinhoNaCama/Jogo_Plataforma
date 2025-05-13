@@ -1,3 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747100373
-icon.svg::CompressedTexture2D::8229478562138733489::1747100359::1747100375::1::::<><><>0<>0<>09b55fb2eb814641edc961f675f97437<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://::1747105597
+icon.svg::CompressedTexture2D/CompressedTexture2D::8229478562138733489::1747100359::1747100375::1::::<><><>0<>0<>09b55fb2eb814641edc961f675f97437<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.tscn::PackedScene::7086868651719861379::1747105597::0::1::::<><><>0<>0<><>::uid://dun7vff0pgqn1::::res://player.gd<>uid://b3ns3imojijw7::::res://assets/Player.png<>uid://dubdyovldyhlf::::res://assets/Chão.jpg
+player.gd::GDScript::8591856551580215828::1747105519::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://assets/::1747105867
+Andar1.png::CompressedTexture2D::3403016084350694723::1747105813::1747105881::1::::<><><>0<>0<>89a076f919eec1a5b4b3c7c31b4a5825<>res://.godot/imported/Andar1.png-72deb39ed969d78d5142f4d958eacda3.ctex::
+Andar2.png::CompressedTexture2D::2859305771530538558::1747105867::1747105881::1::::<><><>0<>0<>21de56eeda35d96dd0f25ef9cf1d6882<>res://.godot/imported/Andar2.png-635ab05574a99079805606a95ca4432e.ctex::
+Chão.jpg::CompressedTexture2D/CompressedTexture2D::8565329079898572711::1747103515::1747103516::1::::<><><>0<>0<>a7cad06da10de2071a0b44a6b45eb70b<>res://.godot/imported/Chão.jpg-f58f416074dfab785f52c444e0e02657.ctex::
+Player.png::CompressedTexture2D/CompressedTexture2D::4379688563832821056::1747102305::1747102305::1::::<><><>0<>0<>8101ddfe088db6ce92f63db12ef3425b<>res://.godot/imported/Player.png-6803eab55bef976c27bd94984cab14de.ctex::

@@ -1,3 +1,71 @@
-[gd_scene format=3 uid="uid://c776xreo4c8r4"]
+[gd_scene load_steps=9 format=3 uid="uid://c776xreo4c8r4"]
+
+[ext_resource type="Script" uid="uid://dun7vff0pgqn1" path="res://player.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b3ns3imojijw7" path="res://assets/Player.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://boqpgbpg24gxf" path="res://assets/Andar1.png" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bg0cl3v4ufmyw" path="res://assets/Andar2.png" id="3_7mycd"]
+[ext_resource type="Texture2D" uid="uid://dubdyovldyhlf" path="res://assets/Chão.jpg" id="3_h2yge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(677, 831.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_272bh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h2yge")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7mycd")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lquwl")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(4797, 789.5)
 
 [node name="Main" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_0xm2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-29, 20)
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(-7, -4.5)
+scale = Vector2(-1.014, 1.009)
+sprite_frames = SubResource("SpriteFrames_272bh")
+animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(2056, -167)
+zoom = Vector2(0.2, 0.2)
+
+[node name="Chão" type="StaticBody2D" parent="."]
+position = Vector2(273, 30)
+
+[node name="Sprite2D" type="Sprite2D" parent="Chão"]
+position = Vector2(1759, 809)
+scale = Vector2(5.9975, 0.99)
+texture = ExtResource("3_h2yge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chão"]
+position = Vector2(1758, 811.75)
+shape = SubResource("RectangleShape2D_lquwl")
